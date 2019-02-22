@@ -1,6 +1,6 @@
 <?php
 
-//数组分组排序
+//数组分组
 public function fetchAllSeedByUserId($user_id)
 {
     /*
