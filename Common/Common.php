@@ -42,3 +42,11 @@ function from10to62($dec) {
     
     return $result;
 }
+
+//正则匹配中文
+function preg()
+{
+    $str = '云南省昆明市富民县赤鹫镇东核村委会';
+    preg_match('#^(.*?)[县|区]{3}#is', $str, $matches);
+    var_dump($matches);
+}
