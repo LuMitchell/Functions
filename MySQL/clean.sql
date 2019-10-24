@@ -6,5 +6,5 @@
 INSERT IGNORE INTO xx_copy (SELECT * FROM xx where id >= 5000000 and id < 10000000);
 
 
-## 将B表的某个字段的值更新到对应的A表里面的某个字段中
-update hospital_doctor as h, hospital_doctor_extra as ex set h.`summary` = ex.`summary` where h5.id = ex.id and ex.summary is not null;
+#将B表的某个字段的值更新到对应的A表里面的某个字段中
+UPDATE hospital_doctor AS h, hospital_doctor_extra AS ex SET h.`summary` = ex.`summary` WHERE h5.id = ex.id AND ex.summary IS NOT null;
